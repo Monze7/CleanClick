@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Maps Integration</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <p>monil</p>
+  <div class="taskbar">
+    <a href="https://accounts.google.com/ServiceLogin">
+      <div class="profile-button">
+        <!-- Add an icon or initials for the profile image -->
+        <img src="profile_image.png" alt="Profile Image" class="profile-image">
+      </div>
+    </a>
+    <!-- Add other elements in the taskbar here -->
+  </div>
+  <div id="map"></div>
+
+  <div id="comment-form">
+    <h2>Add Comment</h2>
+    <form id="commentForm">
+      <label for="comment">Comment:</label>
+      <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+  </script>
 </body>
 </html>
