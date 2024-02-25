@@ -33,9 +33,9 @@ function initMap() {
       // Browser doesn't support Geolocation
       console.error("Error: Your browser doesn't support Geolocation.");
     }
-  }
+}
   
-  function placeCommentMarker(location, map) {
+function placeCommentMarker(location, map) {
     var commentMarker = new google.maps.Marker({
       position: location,
       map: map,
@@ -51,27 +51,16 @@ function initMap() {
     commentMarker.addListener('click', function() {
       infowindow.open(map, commentMarker);
     });
-  }
+}
   
-  document.getElementById('commentForm').addEventListener('submit', function(event) {
+document.getElementById('commentForm').addEventListener('submit', function(event) {
     event.preventDefault();
     var comment = document.getElementById('comment').value;
-    // Send comment data to your backend server for storage
-    // You can use Fetch API or other methods to make an AJAX request
-    // Example: 
-    // fetch('/api/comments', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   },
-    //   body: JSON.stringify({ comment: comment, lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE })
-    // })
-    // .then(response => response.json())
-    // .then(data => {
-    //   console.log('Comment saved:', data);
-    // })
-    // .catch(error => {
-    //   console.error('Error saving comment:', error);
-    // });
-  });
-  
+    var image = document.getElementById('image').files[0]; // Get the uploaded image file
+
+    // Process the comment and image data as needed (e.g., send to server)
+    console.log('Comment:', comment);
+    console.log('Image:', image);
+    // Here you can send the comment and image data to your backend server for storage
+    // Example: sendCommentAndImageToServer(comment, image);
+});

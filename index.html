@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Google Maps Integration</title>
+  <title>Reporting Littered Areas</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -23,13 +23,15 @@
     <form id="commentForm">
       <label for="comment">Comment:</label>
       <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+      <label for="image">Upload Image:</label>
+      <input type="file" id="image" name="image"><br>
       <button type="submit">Submit</button>
     </form>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
   <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8rECDZaI5jUVzsGEEMLxqhc79liHwzCI&callback=initMap">
   </script>
 </body>
 </html>
