@@ -36,6 +36,10 @@
     margin-bottom: 10px;
   }
   
+  #comment-form input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
   #comment-form button {
     background-color: #4CAF50;
     color: white;
@@ -48,4 +52,3 @@
   #comment-form button:hover {
     background-color: #45a049;
   }
-  
