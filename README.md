@@ -11,6 +11,11 @@ CleanClick is a web application designed to help keep our localities clean and g
 - **Report to Local Authorities:** The application can automatically report these instances to the local authorities for action.
 - **Community Engagement:** Users can view, like, and share reports, fostering a community dedicated to a cleaner environment.
 
+# How to run the code
+- Download all the files listed in the project in a folder on your PC.
+- Check the "index.html", line no. 39, if it contains the api key or not.
+- If not paste this-" AIzaSyC8rECDZaI5jUVzsGEEMLxqhc79liHwzCI "
+
 ## Getting Started
 
 ### Prerequisites
